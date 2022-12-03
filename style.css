@@ -185,7 +185,7 @@ header {
 }
 
 main {
-  background-color: rgb(240, 238, 238);
+  background-color: var(--background-color);
   padding: 0 1rem;
 }
 
