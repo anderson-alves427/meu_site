@@ -25,6 +25,9 @@
   --title-text: #000000;
   --text-light: #1f1f1f;
 
+  --footer-color: #C4C4C4;
+
+
 }
 
 .menu-hamburguer {
@@ -213,4 +216,52 @@ main {
   height: 0.09rem;
   width: 70%;
   background-color: #6a3093;
+}
+
+footer {
+  background-color: var(--footer-color);
+  padding: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .home-back {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+footer h6 {
+  font-size: 1.1rem;
+}
+
+.social-media-footer {
+  margin-top: 1rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.social-media-footer i {
+  background-color: #6a3093;
+  color: rgba(255, 255, 255, 1);
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 1s;
+}
+
+.social-media-footer i:hover {
+  background-color: #a044ff;
+}
+
+.name-site-developer {
+  margin-top: 1rem;
 }
