@@ -156,7 +156,7 @@ header {
 }
 
 .menu-link:hover {
-  color: #6a3093;
+  color: var(--secondary-color);
 }
 
 .social-media {
@@ -202,9 +202,9 @@ main {
   align-items: center;
 }
 
-.title_about h3 {
+.title_h3 {
   font-size: 1.5rem;
-  color: #6a3093;
+  color: var(--secondary-color);
 }
 
 #about p {
@@ -217,6 +217,75 @@ main {
   width: 70%;
   background-color: #6a3093;
 }
+
+/* Fale comigo*/
+
+#contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.asides {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  width: 100%;
+}
+
+label {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: #FFFFFF;
+  border: 0.1rem solid #A8A3A3;
+  border-radius: 0.2rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: #FFFFFF;
+  border: 0.1rem solid #A8A3A3;
+  border-radius: 0.2rem;
+}
+
+.button_submit {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  color: #fff;
+  width: 100%;
+  background: #551A7D;
+  border: 0.1rem solid #A8A3A3;
+  border-radius: 0.2rem;
+}
+
+.button_submit:hover {
+  cursor: pointer;
+}
+
+.aside-right {
+  margin: 1rem 0;
+}
+
+.aside-right p {
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+/*Footer*/
 
 footer {
   background-color: var(--footer-color);
