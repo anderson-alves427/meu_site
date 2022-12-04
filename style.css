@@ -218,6 +218,56 @@ main {
   background-color: #6a3093;
 }
 
+/*Projetos*/
+
+#projects {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projects p {
+  margin-top: 1rem;
+}
+
+.container-cards {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 90%;
+}
+
+.projects-cards {
+  width: 100%;
+  position: relative;
+}
+
+.projects-cards img {
+  width: 100%;
+}
+
+.projects-cards button {
+  position: absolute;
+  bottom: 1rem;
+  left: 35%;
+  z-index: 5;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  transition: all 0.3s;
+}
+
+.projects-cards button:hover {
+  background-color: var(--secondary-color);
+  scale: 1.1;
+}
+
+
 /* Fale comigo*/
 
 #contact {
