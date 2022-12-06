@@ -20,7 +20,7 @@
   --primary-color: #7B2D8C;
   --secondary-color: #6a3093;
   
-  --background-color: #fefefe;
+  --background-color: #ededed;
 
   --title-text: #000000;
   --text-light: #1f1f1f;
@@ -30,8 +30,12 @@
 
 }
 
+.main-container {
+  width: 100%;
+  background-color: var(--background-color);
+}
+
 .menu-hamburguer {
-  /* background-color: red; */
   width: 2rem;
   height: 2rem;
   position: fixed;
@@ -64,6 +68,9 @@ header {
   position: relative;
 }
 
+#home {
+  width: 100%;
+}
 .img-wrapper {
   width: 100%;
   height: 100%;
@@ -102,7 +109,7 @@ header {
   margin-bottom: 2rem;
 }
 
-.banner button {
+.banner .link_about {
   font-family: var(--font-primary);
   color: #fff;
   text-transform: uppercase;
@@ -117,7 +124,7 @@ header {
   transition: scale 0.3s;
 }
 
-.banner button:hover {
+.banner .link_about:hover {
   scale: 1.1;
 }
 
@@ -184,9 +191,12 @@ header {
   background-color: #a044ff;
 }
 
-main {
-  background-color: var(--background-color);
+.main-content {
   padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
 }
 
 #about {
@@ -241,25 +251,18 @@ main {
 
 .projects-cards {
   width: 100%;
-  position: relative;
+  transition: all 0.4s;
+}
+
+
+.projects-cards:hover {
+  scale: 1.05;
+  cursor: pointer;
 }
 
 .projects-cards img {
   width: 100%;
-}
-
-.projects-cards button {
-  position: absolute;
-  bottom: 1rem;
-  left: 35%;
-  z-index: 5;
-  padding: 0.5rem 1rem;
-  background-color: var(--primary-color);
-  color: #fff;
-  border: 0;
-  cursor: pointer;
-  border-radius: 0.2rem;
-  transition: all 0.3s;
+  border-radius: 0.5rem;
 }
 
 .projects-cards button:hover {
@@ -358,7 +361,7 @@ footer h6 {
 
 .social-media-footer {
   margin-top: 1rem;
-  width: 50%;
+  width: 10rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -384,3 +387,6 @@ footer h6 {
 .name-site-developer {
   margin-top: 1rem;
 }
+
+
+
